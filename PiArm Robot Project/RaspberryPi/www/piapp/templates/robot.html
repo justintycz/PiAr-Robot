@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<style media="all">
+			h1 
+			{
+				padding-top:100px;
+				text-align:center;
+				font-size:50px;
+			}
+			body {
+				background-color:lightgray;
+			}
+
+			._head
+			{
+				background-color:black;
+				display:flex;
+				justify-content:flex-start;
+				min-height:50px;
+				line-height:55px;
+				position:fixed;
+				min-width:101%;
+				left:-5px;
+			}
+			._head a 
+			{
+				padding-left:5%;
+			}
+			._head button 
+			{
+				background-color: inherit;
+				border:none;
+				outline:none;
+				cursor:pointer;
+				font-size:20px;
+				font-weight:bold;
+				color:white;
+				padding-bottom:10px;
+			}
+			._head button:hover 
+			{
+				color:lightgray;
+			}
+			._head img
+			{
+				height:55px;
+				padding-left:3%;
+			}
+
+			#special
+			{
+				color:gray;
+			}
+			.buttons {
+				text-align:center;
+			}
+			.buttons input:hover {
+				color:gray;
+			}
+			.auto {
+				text-align:center;
+			}
+			.auto input:hover {
+				color:green;
+			}
+			input {
+				width:400px;
+				height:200px;
+				border:5px;
+				solid:gray;
+				border-radius:35px;
+			}
+			.inputclass {
+				font-weight:bold;
+				font-size:35px;
+			}
+		</style>
+		<script type="text/javascript" src="robot.js"></script>
+		
+		<title>Robot Control</title>
+	</head>
+	
+	<body>
+		<div class="_section1">
+			<div class="_head">
+				<a href="http://192.168.0.47"><button>Home Server</button></a>
+				<a href="http://192.168.0.47/piapp"><button>Python Server</button></a>
+				<a href="http://192.168.0.47/piapp/robot"><button id="special">Robot Controller</button></a>
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+				<img src="/raspberry-pi-logo.png" alt="Raspberry Pi Logo">
+			</div>
+		</div>
+		<header><h1>Gary the Robot</h1></header>
+		
+		<form action="/piapp/robot/pos" method="POST">
+			<div class="auto">
+				<input type="submit" name="submit" value="Auto" class="inputclass"><br>
+			</div>
+			<br><br><br><br>
+			<div class="buttons">
+				<input type="submit" name="submit" value="Home" class="inputclass"><br><br>
+				<input type="submit" name="submit" value="Pos1" class="inputclass"><br><br>
+				<input type="submit" name="submit" value="Pos2" class="inputclass"><br><br>
+				<input type="submit" name="submit" value="Pos3" class="inputclass"><br><br>
+				<input type="submit" name="submit" value="Pos4" class="inputclass"><br><br>
+				<input type="submit" name="submit" value="Pos5" class="inputclass"><br><br>
+				<input type="submit" name="submit" value="Pos6" class="inputclass"><br><br>
+			</div>
+			<br><br>
+		</form>
+	</body>
+</html>

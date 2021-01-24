@@ -1,0 +1,18 @@
+Raspberry Pi File Locations
+
+Apache2 Web Server: /var/www/html
+index.html
+_css.css
+_javascript.js
+_nodejsTest.js - obsolete
+usb_Pi.py      - obsolete
+usb_Pi.pyc     - obsolete
+
+Python Flask Server: /var/www/piapp
+piapp.py
+piapp.wsgi
+
+Python Flask Server Templates: /var/www/piapp/templates
+robot.html
+robot.css - obsolete
+robot.js  - obsolete

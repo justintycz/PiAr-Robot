@@ -1,0 +1,9 @@
+Servo Programmed Limits
+
+		+	HOME	-
+Servo 0: 	90	300	520
+Servo 1:	180	250	400
+Servo 2:	80	180	220
+Servo 3:	400	280	130
+Servo 4:	440	280	280
+
